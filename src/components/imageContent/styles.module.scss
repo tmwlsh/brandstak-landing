@@ -1,0 +1,59 @@
+@import "../../sass/variables.scss";
+
+.image-content {
+  padding: 120px 30px 30px 30px;
+
+  @media all and (min-width: $tablet) {
+    padding: 80px 0;
+  }
+}
+
+.image-content-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.image-content-image {
+  height: 400px;
+  flex: 0 0 100%;
+  background: rgba($white, 0.3);
+
+  @media all and (min-width: $tablet) {
+    height: 900px;
+    flex: 0 0 45%;
+  }
+}
+
+.image-content-content {
+  flex: 0 0 100%;
+  box-sizing: border-box;
+
+  p.text-main {
+    color: $white;
+    font-size: 18px;
+    line-height: 1.5em;
+  }
+
+  p.text-secondary {
+    color: $orange;
+    font-size: 14px;
+    line-height: 1.5em;
+  }
+
+  @media all and (min-width: $tablet) {
+    flex: 0 0 55%;
+    padding: 0 10%;
+  }
+
+  @media all and (min-width: $desktop) {
+    p.text-main {
+      font-size: 24px;
+    }
+
+    p.text-secondary {
+      font-size: 16px;
+    }
+  }
+}

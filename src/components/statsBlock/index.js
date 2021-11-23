@@ -1,0 +1,41 @@
+import React, { useState } from "react";
+import Container from "../container";
+
+import * as styles from "./styles.module.scss";
+
+const StatsBlock = () => {
+  return (
+    <header className={styles.statsBlock}>
+      <Container size="medium">
+        <ul className={styles.statsBlockInner}>
+          <li>
+            <span>20%</span>
+            <p>Decrease in inventory and 15% improvement in demand fulfillment.</p>
+          </li>
+          <li>
+            <span>30% +</span>
+            <p>Reduction in cost to implement future solutions.</p>
+          </li>
+          <li>
+            <span>10%</span>
+            <p>Improvement in conversion combined with a 7% increase in AOV. </p>
+          </li>
+          <li>
+            <span>20%</span>
+            <p>Decrease in returns.</p>
+          </li>
+          <li>
+            <span>5-10%</span>
+            <p>Reduction in journey abandonment.</p>
+          </li>
+          <li>
+            <span>10%</span>
+            <p>Increase in click  collect, & try and buy.</p>
+          </li>
+        </ul>
+      </Container>
+    </header>
+  )
+}
+
+export default StatsBlock;
