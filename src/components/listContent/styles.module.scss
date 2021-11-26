@@ -1,0 +1,109 @@
+@import "../../sass/variables.scss";
+
+.list-content {
+}
+
+.list-content-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list-content-left {
+  height: 800px;
+  display: flex;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 calc(55% - 30px);
+
+  .list-content-block-image {
+    width: 500px;
+    height: 300px;
+    max-width: 100%;
+    margin: 0 auto 25px auto;
+  }
+
+  .list-content-block {
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+
+    &:nth-of-type(1) {
+      .list-content-block-image {
+        background: blue;
+      }
+    }
+
+    &:nth-of-type(2) {
+      .list-content-block-image {
+        background: red;
+      }
+    }
+
+    &:nth-of-type(3) {
+      .list-content-block-image {
+        background: green;
+      }
+    }
+
+    &:nth-of-type(4) {
+      .list-content-block-image {
+        background: purple;
+      }
+    }
+
+    &:nth-of-type(5) {
+      .list-content-block-image {
+        background: pink;
+      }
+    }
+
+    &:nth-of-type(6) {
+      .list-content-block-image {
+        background: yellow;
+      }
+    }
+  }
+
+  p {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 24px;
+    max-width: 400px;
+    line-height: 1.4em;
+    color: rgba($white, 0.6);
+  }
+}
+
+.list-content-right {
+  flex: 0 0 calc(45% - 20px);
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin: 0;
+      padding: 10px;
+      color: $white;
+      cursor: pointer;
+      font-size: 36px;
+      list-style-type: none;
+      box-sizing: border-box;
+
+      @media all and (min-width: $tablet) {
+        color: rgba($white, 0.3);
+        transition: 0.5s $transition;
+
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
+}
