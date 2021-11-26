@@ -3,9 +3,12 @@ import Container from "../container";
 
 import * as styles from "./styles.module.scss";
 
+import DotPattern from "../../svgs/dot-pattern.svg";
+
 const Statement = () => {
   return (
     <div className={styles.statement}>
+      <DotPattern />
       <Container size="medium">
         <div className={styles.statementBlock}>
           <h4>The Technical Challenge</h4>

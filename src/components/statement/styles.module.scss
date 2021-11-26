@@ -1,7 +1,18 @@
 @import "../../sass/variables.scss";
 
 .statement {
+  overflow: hidden;
+  position: relative;
   padding: 0 0 100px 0;
+
+  svg {
+    top: 0;
+    left: 0;
+    height: 100%;
+    opacity: 0.3;
+    position: absolute;
+    pointer-events: none;
+  }
 
   .statement-block {
     width: 100%;
@@ -32,6 +43,14 @@
 
   @media all and (min-width: $tablet) {
     padding: 100px 0 200px 0;
+
+    svg {
+      left: 0;
+      top: 50%;
+      width: 60%;
+      height: auto;
+      transform: translateY(-50%);
+    }
 
     .statement-block {
       display: flex;

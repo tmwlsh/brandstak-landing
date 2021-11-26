@@ -11,13 +11,11 @@
 }
 
 .list-content-left {
-  height: 800px;
   display: flex;
+  height: 500px;
+  flex: 0 0 100%;
   position: relative;
   text-align: center;
-  align-items: center;
-  justify-content: center;
-  flex: 0 0 calc(55% - 30px);
 
   .list-content-block-image {
     width: 500px;
@@ -32,6 +30,15 @@
     width: 100%;
     position: absolute;
     transform: translate(-50%, -50%);
+    transition: 0.5s $transition;
+
+    &.inactive {
+      opacity: 0;
+    }
+
+    &.active {
+      opacity: 1;
+    }
 
     &:nth-of-type(1) {
       .list-content-block-image {
@@ -78,10 +85,17 @@
     line-height: 1.4em;
     color: rgba($white, 0.6);
   }
+
+  @media all and (min-width: $tablet) {
+    height: 800px;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 calc(55% - 30px);
+  }
 }
 
 .list-content-right {
-  flex: 0 0 calc(45% - 20px);
+  flex: 0 0 100%;
 
   ul {
     margin: 0;
@@ -95,8 +109,14 @@
       font-size: 36px;
       list-style-type: none;
       box-sizing: border-box;
+    }
+  }
 
-      @media all and (min-width: $tablet) {
+  @media all and (min-width: $tablet) {
+    flex: 0 0 calc(45% - 20px);
+
+    ul {
+      li {
         color: rgba($white, 0.3);
         transition: 0.5s $transition;
 

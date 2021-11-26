@@ -2,9 +2,28 @@
 
 .stats-block {
   padding: 30px 0;
+  overflow: hidden;
+  position: relative;
+
+  svg {
+    top: 0;
+    left: 0;
+    height: 100%;
+    opacity: 0.3;
+    position: absolute;
+    pointer-events: none;
+  }
 
   @media all and (min-width: $tablet) {
     padding: 200px 0;
+
+    svg {
+      left: 0;
+      top: 50%;
+      width: 60%;
+      height: auto;
+      transform: translateY(-50%);
+    }
   }
 }
 

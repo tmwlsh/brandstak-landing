@@ -6,14 +6,11 @@ import * as styles from "./styles.module.scss";
 const ListContent = () => {
 
   const contentBlockListRef = useRef();
-  const [activeListItem, setActiveListItem] = useState(1);
+  const [activeListItem, setActiveListItem] = useState(0);
 
-  const changeListItem = (e) => {
-    console.log('====================================');
-    const listArray = Array.from(e.target.parentNode.children);
-    const blocksArray = Array.from(contentBlockListRef.current.children);
-    const targetBlockIndex = listArray.indexOf(e.target);
-    console.log(blocksArray[targetBlockIndex].classList);
+  const handleChangeListItem = (event, newIndex) => {
+    // Update the state with the index
+    setActiveListItem(newIndex)
   }
 
   return (
@@ -22,39 +19,67 @@ const ListContent = () => {
         <h3>Lifestyle &amp; retail use cases</h3>
         <div className={styles.listContentInner}>
           <div ref={contentBlockListRef} className={styles.listContentLeft}>
-            <div className={styles.listContentBlock}>
-              <div className={styles.listContentBlockImage} />
-              <p>1 Understand levels of market demand for products at a SKU level</p>
-            </div>
-            <div className={styles.listContentBlock}>
-              <div className={styles.listContentBlockImage} />
-              <p>2 Understand levels of market demand for products at a SKU level</p>
-            </div>
-            <div className={styles.listContentBlock}>
-              <div className={styles.listContentBlockImage} />
-              <p>3 Understand levels of market demand for products at a SKU level</p>
-            </div>
-            <div className={styles.listContentBlock}>
-              <div className={styles.listContentBlockImage} />
-              <p>4 Understand levels of market demand for products at a SKU level</p>
-            </div>
-            <div className={styles.listContentBlock}>
-              <div className={styles.listContentBlockImage} />
-              <p>5 Understand levels of market demand for products at a SKU level</p>
-            </div>
-            <div className={styles.listContentBlock}>
-              <div className={styles.listContentBlockImage} />
-              <p>6 Understand levels of market demand for products at a SKU level</p>
-            </div>
+            {[
+              {
+                content: '1 Understand levels of market demand for products at a SKU level',
+                image: 'IMAGE_HERE'
+              },
+              {
+                content: '2 Understand levels of market demand for products at a SKU level',
+                image: 'IMAGE_HERE'
+              },
+              {
+                content: '3 Understand levels of market demand for products at a SKU level',
+                image: 'IMAGE_HERE'
+              },
+              {
+                content: '4 Understand levels of market demand for products at a SKU level',
+                image: 'IMAGE_HERE'
+              },
+              {
+                content: '5 Understand levels of market demand for products at a SKU level',
+                image: 'IMAGE_HERE'
+              },
+              {
+                content: '6 Understand levels of market demand for products at a SKU level',
+                image: 'IMAGE_HERE'
+              }
+            ].map((contentItem, contentItemIndex) => {
+              const contentBlockStyles = [styles.listContentBlock, contentItemIndex === activeListItem ? styles['active'] : styles['inactive']];
+              return (
+                <div
+                  key={contentItemIndex}
+                  className={contentBlockStyles.join(" ")}
+                  // this should be better if you want to fade, but in the meantime this works fine
+                  // style={{ display: contentItemIndex === activeListItem ? 'block' : 'none' }}
+                >
+                  <div className={styles.listContentBlockImage} />
+                  <p>{contentItem.content}</p>
+                  {/* <img src={contentItem.image} /> */}
+                </div>
+              )
+            })}
           </div>
           <div className={styles.listContentRight}>
             <ul>
-              <li onClick={e => changeListItem(e)}>Demand Sensing</li>
-              <li onClick={e => changeListItem(e)}>Customer Journey Analytics</li>
-              <li onClick={e => changeListItem(e)}>Social Media Analytics</li>
-              <li onClick={e => changeListItem(e)}>Inventory Management</li>
-              <li onClick={e => changeListItem(e)}>Geospatial Analytics</li>
-              <li onClick={e => changeListItem(e)}>Programmatical Attribution</li>
+              {[
+                'Demand Sensing',
+                'Customer Journey Analytics',
+                'Social Media Analytics',
+                'Inventory Management',
+                'Geospatial Analytics',
+                'Programmatical Attribution'
+              ].map((listItem, listItemIndex) => {
+                return (
+                  <li
+                    key={listItemIndex}
+                    // pass the index of the listItem as the second param to the click handler
+                    onClick={e => handleChangeListItem(e, listItemIndex)}
+                  >
+                    {listItem}
+                  </li>
+                )
+              })}
             </ul>
           </div>
         </div>

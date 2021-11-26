@@ -3,9 +3,12 @@ import Container from "../container";
 
 import * as styles from "./styles.module.scss";
 
+import DotPattern from "../../svgs/dot-pattern.svg";
+
 const StatsBlock = () => {
   return (
-    <header className={styles.statsBlock}>
+    <div className={styles.statsBlock}>
+      <DotPattern />
       <Container size="medium">
         <ul className={styles.statsBlockInner}>
           <li>
@@ -34,7 +37,7 @@ const StatsBlock = () => {
           </li>
         </ul>
       </Container>
-    </header>
+    </div>
   )
 }
 
