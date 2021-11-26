@@ -5,7 +5,7 @@ import * as styles from "./styles.module.scss";
 
 const Journey = () => {
   return (
-    <div className={styles.journey}>
+    <div className={styles.journey} id="use-cases">
       <Container size="medium">
         <h3>how we work with you <span>brandstak</span></h3>
         <div className={styles.journeyInner}>

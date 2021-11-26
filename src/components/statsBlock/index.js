@@ -7,7 +7,7 @@ import DotPattern from "../../svgs/dot-pattern.svg";
 
 const StatsBlock = () => {
   return (
-    <div className={styles.statsBlock}>
+    <div className={styles.statsBlock} id="key-offering">
       <DotPattern />
       <Container size="medium">
         <ul className={styles.statsBlockInner}>

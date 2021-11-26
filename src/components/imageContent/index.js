@@ -5,7 +5,7 @@ import * as styles from "./styles.module.scss";
 
 const ImageContent = () => {
   return (
-    <div className={styles.imageContent}>
+    <div className={styles.imageContent} id="summary">
       <Container size="large" padd="nopadd">
         <div className={styles.imageContentInner}>
           <div className={styles.imageContentImage}>

@@ -3,18 +3,20 @@ import Container from "../container";
 
 import * as styles from "./styles.module.scss";
 
+import DotPattern from "../../svgs/dot-pattern.svg";
+
 const ListContent = () => {
 
   const contentBlockListRef = useRef();
   const [activeListItem, setActiveListItem] = useState(0);
 
   const handleChangeListItem = (event, newIndex) => {
-    // Update the state with the index
     setActiveListItem(newIndex)
   }
 
   return (
-    <div className={styles.listContent}>
+    <div className={styles.listContent} id="key-benefits">
+      <DotPattern />
       <Container size="large">
         <h3>Lifestyle &amp; retail use cases</h3>
         <div className={styles.listContentInner}>
@@ -50,8 +52,6 @@ const ListContent = () => {
                 <div
                   key={contentItemIndex}
                   className={contentBlockStyles.join(" ")}
-                  // this should be better if you want to fade, but in the meantime this works fine
-                  // style={{ display: contentItemIndex === activeListItem ? 'block' : 'none' }}
                 >
                   <div className={styles.listContentBlockImage} />
                   <p>{contentItem.content}</p>
@@ -70,10 +70,11 @@ const ListContent = () => {
                 'Geospatial Analytics',
                 'Programmatical Attribution'
               ].map((listItem, listItemIndex) => {
+                const contentBlockStyles = [styles.listText, listItemIndex === activeListItem ? styles['active'] : styles['inactive']];
                 return (
                   <li
+                    className={contentBlockStyles.join(" ")}
                     key={listItemIndex}
-                    // pass the index of the listItem as the second param to the click handler
                     onClick={e => handleChangeListItem(e, listItemIndex)}
                   >
                     {listItem}

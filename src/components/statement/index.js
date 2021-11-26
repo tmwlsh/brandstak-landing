@@ -7,7 +7,7 @@ import DotPattern from "../../svgs/dot-pattern.svg";
 
 const Statement = () => {
   return (
-    <div className={styles.statement}>
+    <div className={styles.statement} id="mission-statement">
       <DotPattern />
       <Container size="medium">
         <div className={styles.statementBlock}>

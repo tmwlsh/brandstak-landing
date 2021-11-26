@@ -8,6 +8,7 @@
   svg {
     top: 0;
     left: 0;
+    z-index: 1;
     height: 100%;
     opacity: 0.3;
     position: absolute;
@@ -30,8 +31,10 @@
 .stats-block-inner {
   margin: 0;
   padding: 0;
+  z-index: 10;
   display: flex;
   flex-wrap: wrap;
+  position: relative;
   align-items: flex-start;
 
   li {
