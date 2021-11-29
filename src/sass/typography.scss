@@ -1,7 +1,17 @@
 @font-face {
-  font-family: "Abside";
-  src: url("https://github.com/tmwlsh/brandstak-landing/blob/master/src/fonts/Abside-Regular.woff")
-    format("woff");
-  font-weight: normal;
+  font-family: "Abside Regular";
+  src: local("Abside Regular"), local("Abside-Regular"),
+    url("../fonts/Abside-Regular.woff") format("woff");
+  font-weight: light;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Abside Oblique";
+  src: local("Abside Oblique"), local("Abside-Oblique"),
+    url("../fonts/Abside-Oblique.woff") format("woff");
+  font-weight: light;
+  font-style: italic;
+  font-display: swap;
 }
