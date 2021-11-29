@@ -9,6 +9,7 @@ import Journey from "../components/journey";
 import Statement from "../components/statement";
 import ListContent from "../components/listContent";
 import TheTeam from "../components/theTeam";
+import ContactForm from "../components/contactForm";
 
 const IndexPage = () => {
   return (
@@ -21,6 +22,7 @@ const IndexPage = () => {
         <Fade><ListContent /></Fade>
         <Fade><Journey /></Fade>
         <Fade><Statement /></Fade>
+        <Fade><ContactForm /></Fade>
       </Layout>
     </main>
   )

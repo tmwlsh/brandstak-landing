@@ -1,0 +1,62 @@
+@import "../../sass/variables.scss";
+
+.contact-form {
+  padding: 50px 0;
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .form-field {
+    flex: 0 0 100%;
+    margin-bottom: 30px;
+
+    &.full {
+      flex: 0 0 100%;
+    }
+
+    p {
+      color: rgba($white, 0.6);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 8px;
+      text-transform: uppercase;
+    }
+  }
+
+  input,
+  textarea {
+    border: 0;
+    outline: 0;
+    width: 100%;
+    padding: 20px;
+    display: block;
+    font-size: 16px;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    font-family: "Abside Regular", Helvetica, sans-serif;
+
+    &[type="submit"] {
+      width: auto;
+      cursor: pointer;
+      margin: 0 0 0 auto;
+      padding: 20px 40px;
+      background-color: $orange;
+    }
+  }
+
+  textarea {
+    height: 300px;
+  }
+
+  @media all and (min-width: $tablet) {
+    padding: 100px 0;
+
+    .form-field {
+      flex: 0 0 calc(50% - 30px);
+    }
+  }
+}
