@@ -3,17 +3,21 @@ import Container from "../container";
 
 import * as styles from "./styles.module.scss";
 
+import Image1 from "../../images/brandstak-image-2.jpg";
+import TallLogo from "../../svgs/tall-logo.svg";
+
 const ImageContent = () => {
   return (
     <div className={styles.imageContent} id="summary">
       <Container size="large" padd="nopadd">
         <div className={styles.imageContentInner}>
           <div className={styles.imageContentImage}>
-
+            <img src={Image1} alt="" />
+            <TallLogo />
           </div>
           <div className={styles.imageContentContent}>
-            <p className={styles.textMain}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tristique velit sit amet turpis porta, non dignissim massa gravida. Praesent id libero libero. Cras non semper nisi. Duis id aliquet elit, eu facilisis risus. Maecenas a ligula scelerisque, molestie nisi et, vestibulum erat. Duis vitae nulla fringilla, pulvinar leo quis, semper sapien. In ultrices pellentesque purus, nec finibus magna venenatis in. Morbi consectetur lacinia consequat. Curabitur hendrerit eget eros.</p>
-            <p className={styles.textSecondary}>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec a dignissim nunc, finibus dignissim lectus. In hac habitasse platea dictumst. Morbi dolor risus, vehicula quis ante sit amet, congue ultrices ligula. Curabitur tortor erat, tincidunt a faucibus cursus, feugiat faucibus quam. Ut rutrum magna a sem consequat</p>
+            <p className={styles.textMain}>BrandStak is Lifestyle/Omnichannel focused Enterprise Operating System delivered as PaaS that addresses the issues with complex and legacy back-office systems that delivers using AI/ML Advanced Analytics across the enterprise for better decision making and designing consumer journeys.</p>
+            <p className={styles.textSecondary}>BrandStak works alongside your existing systems to add best in class microservices AI and ML to deliver insight improve decision making and enable consumer journeys that will delight and convert more customers. BrandStak and its microservices partners can deliver proven results in the Brand market - these include.</p>
           </div>
         </div>
       </Container>

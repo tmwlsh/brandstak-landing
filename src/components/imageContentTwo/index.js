@@ -3,13 +3,15 @@ import Container from "../container";
 
 import * as styles from "./styles.module.scss";
 
+import Image2 from "../../images/brandstak-image-1.jpg";
+
 const ImageContentTwo = () => {
   return (
     <div className={styles.imageContent} id="solution-overview">
       <Container size="large" padd="nopadd">
         <div className={styles.imageContentInner}>
           <div className={styles.imageContentImage}>
-
+            <img src={Image2} alt="" />
           </div>
           <div className={styles.imageContentContent}>
             <p className={styles.textMain}><span>BrandStak</span> – data-first enterprise PaaS operating system developed specifically for the needs of the wear and home branded lifestyle sector</p>

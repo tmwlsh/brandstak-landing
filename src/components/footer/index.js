@@ -3,13 +3,15 @@ import Container from "../container";
 
 import * as styles from "./styles.module.scss";
 
+import FullLogo from "../../svgs/full-logo.svg";
+
 const Footer = () => {
   return (
     <footer className={styles.footer}>
       <Container size="large">
         <div className={styles.footerInner}>
           <div className={styles.footerLeft}>
-            <h1>Logo</h1>
+            <FullLogo />
           </div>
           <div className={styles.footerRight}>
             <p>&copy; Brandstak 2021</p>

@@ -18,11 +18,38 @@
 .image-content-image {
   height: 400px;
   flex: 0 0 100%;
-  background: rgba($white, 0.3);
+  position: relative;
+
+  img {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+  }
+
+  svg {
+    top: 50%;
+    width: 180px;
+    right: -90px;
+    display: none;
+    position: absolute;
+    transform: translateY(-50%);
+
+    * {
+      fill: $white;
+      stroke: $white;
+    }
+  }
 
   @media all and (min-width: $tablet) {
     height: 900px;
     flex: 0 0 45%;
+
+    svg {
+      display: block;
+    }
   }
 }
 
