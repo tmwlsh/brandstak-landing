@@ -1,0 +1,110 @@
+@import "../../sass/variables.scss";
+
+.the-team {
+  padding: 100px 0;
+
+  h3 {
+    width: 100%;
+    display: block;
+    font-size: 36px;
+    font-weight: 100;
+    margin: 0 0 50px 0;
+    position: relative;
+    text-align: center;
+    color: rgba($white, 0.2);
+
+    span {
+      top: 60%;
+      left: 50%;
+      color: $white;
+      display: none;
+      font-weight: 600;
+      position: absolute;
+      letter-spacing: 8px;
+      text-transform: uppercase;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    display: block;
+
+    li {
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 0 50px 0;
+      flex-direction: row;
+      list-style-type: none;
+      align-items: flex-start;
+
+      .team-image {
+        height: 350px;
+        flex: 0 0 300px;
+        background: red;
+        margin: 0 50px 0 0;
+      }
+
+      p {
+        color: $white;
+        font-size: 18px;
+        flex: 0 0 100%;
+        margin: 50px 0 0 0;
+        line-height: 1.5em;
+      }
+    }
+  }
+
+  @media all and (min-width: $tablet) {
+    padding: 100px 0;
+
+    h3 {
+      font-size: 64px;
+
+      span {
+        display: block;
+        font-size: 12px;
+      }
+    }
+
+    ul {
+      margin: 150px 0 0 0;
+
+      li {
+        &:nth-of-type(even) {
+          flex-direction: row-reverse;
+
+          .team-image {
+            margin: 0 0 0 50px;
+          }
+        }
+
+        p {
+          flex: 0 0 calc(50% - 50px);
+        }
+      }
+    }
+  }
+
+  @media all and (min-width: 1080px) {
+    ul {
+      li {
+        p {
+          flex: 0 0 600px;
+        }
+      }
+    }
+  }
+
+  @media all and (min-width: $desktop) {
+    h3 {
+      font-size: 84px;
+
+      span {
+        font-size: 16px;
+      }
+    }
+  }
+}

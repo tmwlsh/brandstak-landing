@@ -8,6 +8,7 @@ import StatsBlock from "../components/statsBlock";
 import Journey from "../components/journey";
 import Statement from "../components/statement";
 import ListContent from "../components/listContent";
+import TheTeam from "../components/theTeam";
 
 const IndexPage = () => {
   return (
@@ -15,6 +16,7 @@ const IndexPage = () => {
       <Layout>
         <Fade><ImageContent /></Fade>
         <Fade><StatsBlock /></Fade>
+        <Fade><TheTeam /></Fade>
         <Fade><ImageContentTwo /></Fade>
         <Fade><ListContent /></Fade>
         <Fade><Journey /></Fade>
