@@ -38,10 +38,12 @@
       align-items: flex-start;
 
       .team-image {
-        height: 350px;
+        height: auto;
+        width: 300px;
         flex: 0 0 300px;
-        background: red;
         margin: 0 50px 0 0;
+        display: inline-block;
+        object-fit: cover;
       }
 
       p {
