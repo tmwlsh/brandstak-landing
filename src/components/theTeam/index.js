@@ -37,7 +37,7 @@ const TheTeam = () => {
               </div>
             </li>
             <li>
-              <img className={styles.teamImage} src={Staff4} alt="Staff Member Team Photo" />
+              <img className={styles.teamImage} src={Staff2} alt="Staff Member Team Photo" />
               <div className={styles.teamContent}>
                 <h4>Dr. Tim Drye | Chief Data Scientist</h4>
                 <p>Head of Applied Statistics at Cambridge University, Theoretical Statistical Physicist background, “Data IQ” Data Scientist of the Year recipient. Expert in AI and Machine Learning with a proven commercial track record across retail, aviation, government, charitable and enterprise organisations. Predictive model development for activities including Marketing, Operations and Supply Chain.</p>
