@@ -61,6 +61,11 @@
     color: $white;
     font-size: 18px;
     line-height: 1.5em;
+
+    span {
+      text-transform: uppercase;
+      font-family: "Abside Regular", Helvetica, sans-serif;
+    }
   }
 
   p.text-secondary {

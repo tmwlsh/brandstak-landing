@@ -28,7 +28,9 @@
       font-weight: 100;
       margin: 0 0 6px 0;
       line-height: 1.5em;
+      text-transform: uppercase;
       flex: 0 0 calc(40% - 40px);
+      font-family: "Abside Regular", Helvetica, sans-serif;
     }
 
     p {
@@ -61,12 +63,8 @@
       align-items: flex-start;
       justify-content: space-between;
 
-      h4 {
-        font-size: 32px;
-      }
-
       p {
-        font-size: 18px;
+        font-size: 22px;
       }
     }
   }

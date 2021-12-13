@@ -4,6 +4,8 @@ import Container from "../container";
 import * as styles from "./styles.module.scss";
 
 import FullLogo from "../../svgs/full-logo.svg";
+import Linkedin from "../../svgs/linkedin-brands.svg";
+import Mail from "../../svgs/envelope-regular.svg";
 
 const Footer = () => {
   return (
@@ -16,10 +18,8 @@ const Footer = () => {
           <div className={styles.footerRight}>
             <p>&copy; Brandstak 2021</p>
             <ul>
-              <li><a href="#">FB</a></li>
-              <li><a href="#">TW</a></li>
-              <li><a href="#">LI</a></li>
-              <li><a href="#">IN</a></li>
+              <li><a href="#"><Linkedin /></a></li>
+              <li><a href="#"><Mail /></a></li>
             </ul>
           </div>
         </div>

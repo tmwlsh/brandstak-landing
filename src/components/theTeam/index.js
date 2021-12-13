@@ -7,7 +7,7 @@ const TheTeam = () => {
   return (
     <div className={styles.theTeam} id="the-team">
       <Container size="medium">
-        <h3>meet the team <span>brandstak</span></h3>
+        <h3><span>brandstak</span> meet the team</h3>
         <div className={styles.theTeamInner}>
           <ul className={styles.teamList}>
             <li>

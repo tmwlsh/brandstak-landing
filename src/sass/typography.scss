@@ -15,3 +15,12 @@
   font-style: italic;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "Brother";
+  src: local("Brother Thin"), local("Brother-Thin"),
+    url("../fonts/Brother-Thin.woff") format("woff");
+  font-weight: light;
+  font-style: regular;
+  font-display: swap;
+}

@@ -14,15 +14,12 @@
     color: rgba($white, 0.2);
 
     span {
-      top: 60%;
-      left: 50%;
       color: $white;
       display: none;
       font-weight: 600;
-      position: absolute;
       letter-spacing: 8px;
       text-transform: uppercase;
-      transform: translate(-50%, -50%);
+      font-family: "Abside Regular", Helvetica, sans-serif;
     }
   }
 

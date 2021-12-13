@@ -21,6 +21,16 @@
       display: block;
       font-size: 18px;
       text-decoration: none;
+      transition: 0.5s $transition;
+      font-family: "Abside Regular", Helvetica, sans-serif;
+
+      svg {
+        width: 30px;
+      }
+
+      &:hover {
+        opacity: 0.6;
+      }
     }
   }
 
