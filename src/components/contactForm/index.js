@@ -6,6 +6,7 @@ import * as styles from "./styles.module.scss";
 const ContactForm = () => {
   return (
     <div className={styles.contactForm} id="contact">
+      <h3><span>brandstak</span> Contact Us</h3>
       <Container size="small">
         <div className={styles.contactFormInner}>
           <form>

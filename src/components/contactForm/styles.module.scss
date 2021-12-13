@@ -3,6 +3,27 @@
 .contact-form {
   padding: 50px 0;
 
+  h3 {
+    width: 100%;
+    display: block;
+    font-size: 36px;
+    font-weight: 100;
+    margin: 0 0 50px 0;
+    position: relative;
+    text-align: center;
+    color: rgba($white, 0.2);
+    text-transform: uppercase;
+    font-family: "Abside Regular", Helvetica, sans-serif;
+
+    span {
+      color: $white;
+      display: none;
+      font-weight: 600;
+      letter-spacing: 8px;
+      text-transform: uppercase;
+    }
+  }
+
   form {
     display: flex;
     flex-wrap: wrap;
@@ -55,8 +76,27 @@
   @media all and (min-width: $tablet) {
     padding: 100px 0;
 
+    h3 {
+      font-size: 64px;
+
+      span {
+        display: block;
+        font-size: 12px;
+      }
+    }
+
     .form-field {
       flex: 0 0 calc(50% - 30px);
+    }
+  }
+
+  @media all and (min-width: $desktop) {
+    h3 {
+      font-size: 84px;
+
+      span {
+        font-size: 16px;
+      }
     }
   }
 }

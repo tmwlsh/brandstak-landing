@@ -12,6 +12,8 @@
     position: relative;
     text-align: center;
     color: rgba($white, 0.2);
+    text-transform: uppercase;
+    font-family: "Abside Regular", Helvetica, sans-serif;
 
     span {
       color: $white;
@@ -19,7 +21,6 @@
       font-weight: 600;
       letter-spacing: 8px;
       text-transform: uppercase;
-      font-family: "Abside Regular", Helvetica, sans-serif;
     }
   }
 

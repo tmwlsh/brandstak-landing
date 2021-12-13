@@ -13,6 +13,10 @@
     margin: 20px 0 0 0;
     text-align: center;
     color: $white;
+    position: relative;
+    z-index: 100;
+    text-transform: uppercase;
+    font-family: "Abside Regular", Helvetica, sans-serif;
   }
 
   svg {

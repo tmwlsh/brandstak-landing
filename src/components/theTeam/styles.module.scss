@@ -12,6 +12,8 @@
     position: relative;
     text-align: center;
     color: rgba($white, 0.2);
+    text-transform: uppercase;
+    font-family: "Abside Regular", Helvetica, sans-serif;
 
     span {
       color: $white;
@@ -19,7 +21,6 @@
       font-weight: 600;
       letter-spacing: 8px;
       text-transform: uppercase;
-      font-family: "Abside Regular", Helvetica, sans-serif;
     }
   }
 
@@ -46,12 +47,26 @@
         object-fit: cover;
       }
 
-      p {
-        color: $white;
-        font-size: 18px;
+      .team-content {
         flex: 0 0 100%;
-        margin: 50px 0 0 0;
-        line-height: 1.5em;
+
+        h4 {
+          width: 100%;
+          color: $orange;
+          max-width: 380px;
+          line-height: 1.4em;
+          font-size: 16px;
+          margin: 20px 0 0 0;
+          text-transform: uppercase;
+          font-family: "Abside Regular", Helvetica, sans-serif;
+        }
+
+        p {
+          color: $white;
+          font-size: 18px;
+          margin: 10px 0 0 0;
+          line-height: 1.5em;
+        }
       }
     }
   }
@@ -90,8 +105,13 @@
   @media all and (min-width: 1080px) {
     ul {
       li {
-        p {
+        .team-content {
           flex: 0 0 600px;
+
+          h4 {
+            font-size: 18px;
+            max-width: 100%;
+          }
         }
       }
     }
