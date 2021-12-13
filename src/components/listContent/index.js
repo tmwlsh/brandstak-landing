@@ -5,7 +5,15 @@ import * as styles from "./styles.module.scss";
 
 import DotPattern from "../../svgs/dot-pattern.svg";
 
+import Image1 from "../../images/demand-sensing.png";
+import Image2 from "../../images/inventory-management.png";
+import Image3 from "../../images/journey-analytics.png";
+import Image4 from "../../images/social-media.png";
+import Image5 from "../../images/geospatial-analytics.png";
+import Image6 from "../../images/programmatic-attribution.png";
+
 const ListContent = () => {
+
 
   const contentBlockListRef = useRef();
   const [activeListItem, setActiveListItem] = useState(0);
@@ -23,28 +31,28 @@ const ListContent = () => {
           <div ref={contentBlockListRef} className={styles.listContentLeft}>
             {[
               {
-                content: '1 Understand levels of market demand for products at a SKU level',
-                image: 'IMAGE_HERE'
+                content: 'Identify demand for products across all consumer touch points',
+                image: Image1
               },
               {
-                content: '2 Understand levels of market demand for products at a SKU level',
-                image: 'IMAGE_HERE'
+                content: 'Maximize demand servicing for consumers with lower levels of inventory',
+                image: Image2
               },
               {
-                content: '3 Understand levels of market demand for products at a SKU level',
-                image: 'IMAGE_HERE'
+                content: 'Understand, map and influence brand consumer journeys throughout the site',
+                image: Image3
               },
               {
-                content: '4 Understand levels of market demand for products at a SKU level',
-                image: 'IMAGE_HERE'
+                content: 'Drive footfall, increase clicks and engender loyalty through social media',
+                image: Image4
               },
               {
-                content: '5 Understand levels of market demand for products at a SKU level',
-                image: 'IMAGE_HERE'
+                content: 'Maximize operating leverage through a better-quality store estate',
+                image: Image5
               },
               {
-                content: '6 Understand levels of market demand for products at a SKU level',
-                image: 'IMAGE_HERE'
+                content: 'Identify the “value add” each store delivers to sales across all channels',
+                image: Image5
               }
             ].map((contentItem, contentItemIndex) => {
               const contentBlockStyles = [styles.listContentBlock, contentItemIndex === activeListItem ? styles['active'] : styles['inactive']];
@@ -53,9 +61,8 @@ const ListContent = () => {
                   key={contentItemIndex}
                   className={contentBlockStyles.join(" ")}
                 >
-                  <div className={styles.listContentBlockImage} />
+                  <img src={contentItem.image} />
                   <p>{contentItem.content}</p>
-                  {/* <img src={contentItem.image} /> */}
                 </div>
               )
             })}
