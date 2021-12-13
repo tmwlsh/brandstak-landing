@@ -11,20 +11,32 @@ const ContactForm = () => {
           <form>
             <div className={styles.formField}>
               <label>
-                <p>First Name</p>
-                <input type="text" placeholder="First Name" />
+                <p>Full Name</p>
+                <input type="text" placeholder="Full Name" />
               </label>
             </div>
             <div className={styles.formField}>
               <label>
-                <p>Last Name</p>
-                <input type="text" placeholder="Last Name" />
+                <p>Email Address</p>
+                <input type="email" placeholder="Email Address" />
+              </label>
+            </div>
+            <div className={styles.formField}>
+              <label>
+                <p>Phone Number</p>
+                <input type="text" placeholder="Phone Number" />
+              </label>
+            </div>
+            <div className={styles.formField}>
+              <label>
+                <p>Location</p>
+                <input type="text" placeholder="Location" />
               </label>
             </div>
             <div className={[styles.formField, styles['full']].join(" ")}>
               <label>
-                <p>Query</p>
-                <textarea placeholder="Query" />
+                <p>Message</p>
+                <textarea placeholder="Message" />
               </label>
             </div>
             <div className={[styles.formField, styles['full']].join(" ")}>

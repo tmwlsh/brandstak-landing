@@ -3,6 +3,8 @@
 .footer {
   padding: 60px 0;
   background: $orange;
+  position: relative;
+  z-index: 500;
 
   @media all and (min-width: $tablet) {
     padding: 30px 0;
