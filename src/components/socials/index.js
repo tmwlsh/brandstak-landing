@@ -11,7 +11,7 @@ const Socials = () => {
   return (
     <ul className={styles.socials}>
       <li><a href="#"><Linkedin /></a></li>
-      <li><a href="#"><Mail /></a></li>
+      <li><a href="mailto:enquiries@brandstak.io?subject=BrandStak Website Enquiry"><Mail /></a></li>
     </ul>
   )
 }

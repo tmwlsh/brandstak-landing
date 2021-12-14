@@ -19,7 +19,7 @@ const Footer = () => {
             <p>&copy; Brandstak 2021</p>
             <ul>
               <li><a href="#"><Linkedin /></a></li>
-              <li><a href="#"><Mail /></a></li>
+              <li><a href="mailto:enquiries@brandstak.io?subject=BrandStak Website Enquiry"><Mail /></a></li>
             </ul>
           </div>
         </div>

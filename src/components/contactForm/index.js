@@ -9,35 +9,37 @@ const ContactForm = () => {
       <h3><span>brandstak</span> Contact Us</h3>
       <Container size="small">
         <div className={styles.contactFormInner}>
-          <form>
+          <form netlify-honeypot="bot-field" data-netlify="true" name="contact">
+            <input type="hidden" name="bot-field" />
+            <input type="hidden" name="form-name" value="contact" />
             <div className={styles.formField}>
               <label>
                 <p>Full Name</p>
-                <input type="text" placeholder="Full Name" />
+                <input name="Full Name" type="text" placeholder="Full Name" />
               </label>
             </div>
             <div className={styles.formField}>
               <label>
                 <p>Email Address</p>
-                <input type="email" placeholder="Email Address" />
+                <input name="Email Address" type="email" placeholder="Email Address" />
               </label>
             </div>
             <div className={styles.formField}>
               <label>
                 <p>Phone Number</p>
-                <input type="text" placeholder="Phone Number" />
+                <input name="Phone Number" type="text" placeholder="Phone Number" />
               </label>
             </div>
             <div className={styles.formField}>
               <label>
                 <p>Location</p>
-                <input type="text" placeholder="Location" />
+                <input name="Location" type="text" placeholder="Location" />
               </label>
             </div>
             <div className={[styles.formField, styles['full']].join(" ")}>
               <label>
                 <p>Message</p>
-                <textarea placeholder="Message" />
+                <textarea name="Message" placeholder="Message" />
               </label>
             </div>
             <div className={[styles.formField, styles['full']].join(" ")}>
