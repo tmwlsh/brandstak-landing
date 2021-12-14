@@ -18,7 +18,7 @@ const Footer = () => {
           <div className={styles.footerRight}>
             <p>&copy; Brandstak 2021</p>
             <ul>
-              <li><a href="#"><Linkedin /></a></li>
+              <li><a target="_blank" href="https://www.linkedin.com/company/brandstak"><Linkedin /></a></li>
               <li><a href="mailto:enquiries@brandstak.io?subject=BrandStak Website Enquiry"><Mail /></a></li>
             </ul>
           </div>
