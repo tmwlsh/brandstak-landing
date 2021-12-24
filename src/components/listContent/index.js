@@ -10,7 +10,7 @@ import Image2 from "../../images/inventory-management.png";
 import Image3 from "../../images/journey-analytics.png";
 import Image4 from "../../images/social-media.png";
 import Image5 from "../../images/geospatial-analytics.png";
-import Image6 from "../../images/programmatic-attribution.png";
+// import Image6 from "../../images/programmatic-attribution.png";
 
 const ListContent = () => {
 
