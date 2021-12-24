@@ -63,7 +63,7 @@
     padding: 180px 0 100px 0;
 
     h3 {
-      font-size: 64px;
+      font-size: 48px;
 
       span {
         display: block;
@@ -80,8 +80,6 @@
 
   @media all and (min-width: $desktop) {
     h3 {
-      font-size: 84px;
-
       span {
         font-size: 16px;
       }

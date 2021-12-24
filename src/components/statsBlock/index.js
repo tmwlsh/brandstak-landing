@@ -10,6 +10,7 @@ const StatsBlock = () => {
     <div className={styles.statsBlock} id="key-offering">
       <DotPattern />
       <Container size="medium">
+        <p className={styles.statsBlockIntro}>BrandStak and its microservices partners can deliver proven results in the Brand market - these include.</p>
         <ul className={styles.statsBlockInner}>
           <li>
             <span>20%</span>

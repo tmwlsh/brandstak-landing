@@ -1,5 +1,7 @@
 .container {
+  z-index: 100;
   margin: 0 auto;
+  position: relative;
 
   &.large {
     max-width: 1920px;

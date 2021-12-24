@@ -7,7 +7,7 @@ const Journey = () => {
   return (
     <div className={styles.journey} id="use-cases">
       <Container size="medium">
-        <h3><span>brandstak</span> how we work with you</h3>
+        <h3><span>brandstak</span> An End To Wholesale Re-Platforming</h3>
         <div className={styles.journeyInner}>
           <ul>
             <li>

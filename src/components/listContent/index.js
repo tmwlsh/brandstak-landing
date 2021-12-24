@@ -26,7 +26,7 @@ const ListContent = () => {
     <div className={styles.listContent} id="key-benefits">
       <DotPattern />
       <Container size="large">
-        <h3>Lifestyle &amp; retail use cases</h3>
+        <h3><span>BrandStack</span> Lifestyle &amp; retail use cases</h3>
         <div className={styles.listContentInner}>
           <div ref={contentBlockListRef} className={styles.listContentLeft}>
             {[
