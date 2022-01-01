@@ -16,8 +16,8 @@ const ImageContent = () => {
             <TallLogo />
           </div>
           <div className={styles.imageContentContent}>
-            <p className={styles.textMain}><span>BrandStak</span> is a Lifestyle / Omnichannel focused operating system. Delivered as PaaS it addresses issues with complex and legacy back-office systems. Utilising AI/ML analytics across the enterprise BrandStak allows for better decision making and well conceptualised consumer journeys.</p>
-            <p className={styles.textSecondary}>BrandStak works alongside your existing systems to add best in class microservices AI and ML to deliver insight improve decision making and enable consumer journeys that will delight and convert more customers.</p>
+            <p className={styles.textMain}><span>BrandStak</span> is a next generation enterprise operating system for brand owners and vertical retailers. Delivered ‘as a service’ BrandStak addresses the issues these businesses face from a myriad of complex, legacy technology when trying to embrace latest generation marketing and retail technology.</p>
+            <p className={styles.textSecondary}>Through our partnerships with key Mach and Marketing AI technology businesses we can deliver AI / ML empowered integration, analytics and data harmonisation creating 360 degree harmonised data flows from even the most complex and diverse back office applications. Ultimately, Brandstak provides the insight, connectivity and data services you need to create engaging customer journeys that will convert, retain and delight your consumers.</p>
           </div>
         </div>
       </Container>

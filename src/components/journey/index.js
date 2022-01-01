@@ -16,7 +16,7 @@ const Journey = () => {
             </li>
             <li>
               <span>02</span>
-              <p>Augmentation of the Shopify experience with new cart tech and journeys,</p>
+              <p>Augmentation of your existing storefront with new shopping cart and personalisation technologies to supercharge your customer journeys.</p>
             </li>
             <li>
               <span>03</span>
