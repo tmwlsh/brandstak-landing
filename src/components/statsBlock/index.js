@@ -7,7 +7,7 @@ import DotPattern from "../../svgs/dot-pattern.svg";
 
 const StatsBlock = () => {
   return (
-    <div className={styles.statsBlock} id="key-offering">
+    <div className={styles.statsBlock} id="key-benefits">
       <DotPattern />
       <Container size="medium">
         <p className={styles.statsBlockIntro}>BrandStak and its microservices partners can deliver proven results in the Brand market - these include.</p>

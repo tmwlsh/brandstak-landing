@@ -23,7 +23,7 @@ const ListContent = () => {
   }
 
   return (
-    <div className={styles.listContent} id="key-benefits">
+    <div className={styles.listContent} id="use-cases">
       <DotPattern />
       <Container size="large">
         <h3><span>BrandStack</span> Lifestyle &amp; retail use cases</h3>

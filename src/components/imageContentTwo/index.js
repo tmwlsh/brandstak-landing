@@ -7,7 +7,7 @@ import Image2 from "../../images/brandstak-image-1.jpg";
 
 const ImageContentTwo = () => {
   return (
-    <div className={styles.imageContent} id="solution-overview">
+    <div className={styles.imageContent} id="key-offering">
       <Container size="large" padd="nopadd">
         <div className={styles.imageContentInner}>
           <div className={styles.imageContentImage}>
