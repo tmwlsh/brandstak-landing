@@ -1,12 +1,14 @@
-import * as React from "react";
-import Container from "../container";
+import * as React from 'react';
+import Container from '../container';
 
-import * as styles from "./styles.module.scss";
+import * as styles from './styles.module.scss';
 
 const ContactForm = () => {
   return (
     <div className={styles.contactForm} id="contact">
-      <h3><span>brandstak</span> Contact Us</h3>
+      <h3>
+        <span>brandstak</span> Contact Us
+      </h3>
       <Container size="small">
         <div className={styles.contactFormInner}>
           <form netlify-honeypot="bot-field" data-netlify="true" name="contact">
@@ -21,13 +23,21 @@ const ContactForm = () => {
             <div className={styles.formField}>
               <label>
                 <p>Email Address</p>
-                <input name="Email Address" type="email" placeholder="Email Address" />
+                <input
+                  name="Email Address"
+                  type="email"
+                  placeholder="Email Address"
+                />
               </label>
             </div>
             <div className={styles.formField}>
               <label>
                 <p>Phone Number</p>
-                <input name="Phone Number" type="text" placeholder="Phone Number" />
+                <input
+                  name="Phone Number"
+                  type="text"
+                  placeholder="Phone Number"
+                />
               </label>
             </div>
             <div className={styles.formField}>
@@ -36,20 +46,20 @@ const ContactForm = () => {
                 <input name="Location" type="text" placeholder="Location" />
               </label>
             </div>
-            <div className={[styles.formField, styles['full']].join(" ")}>
+            <div className={[styles.formField, styles['full']].join(' ')}>
               <label>
                 <p>Message</p>
                 <textarea name="Message" placeholder="Message" />
               </label>
             </div>
-            <div className={[styles.formField, styles['full']].join(" ")}>
+            <div className={[styles.formField, styles['full']].join(' ')}>
               <input type="submit" value="Submit" />
             </div>
           </form>
         </div>
       </Container>
     </div>
-  )
-}
+  );
+};
 
 export default ContactForm;
