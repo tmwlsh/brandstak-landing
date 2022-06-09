@@ -8,6 +8,7 @@ import fitImage from "../../images/partners/fit.png";
 import fluentImage from "../../images/partners/fluent.png";
 import lookerImage from "../../images/partners/looker.png";
 import DotPattern from "../../svgs/dot-pattern.svg";
+
 const partnerData = [
   { name: "google", logo: googleImage, link: "https://cloud.google.com/" },
   { name: "commerce", logo: commerceImage, link: "https://commercetools.com/" },
@@ -23,37 +24,31 @@ const partnerData = [
 
 const staticPartnerData = [
   {
-    title: "needs title",
-    paragraph: `BrandStak – a new AI / ML and advanced data management platform
-  designed for the Affordable Luxury retail sector is pleased to
-  announce two new strategic partnerships with key composable commerce
-  platforms Commercetools and Fluent Commerce.`,
+    title: "BrandStak",
+    paragraph: `A new, easy-to-implement and cost-effective AI / ML -based data unification, analytics and tech integration platform, designed for augmented decisioning in the consumer and retail sector – is pleased to announce two new strategic partnerships. BrandStak has been incubated by the Emerisque Group, a specialist global investor in mid-cap consumer and retail brands.`,
   },
   {
-    title: "From our Founder",
-    paragraph: ` Ajay Khaitan, CEO and serial investor in Brands, and the technology
-that supports them, said “By providing deep insights into the key
-assets of a retail business (Products, Customers, Locations and Store
-Fronts) BrandStak demonstrates the value of Fluent’s OMS, constantly
-identifying new opportunities to exploit the power of Fluent Commerce
-within a client organisation”.`,
+    title: "From the press",
+    paragraph: `ShopTalk UK 2022, an event that unites the European consumer and retail ecosystem at the most senior levels, marks the beginning of strategic partnerships between BrandStak and commercetools as well as Fluent Commerce. `,
+  },
+  {
+    title: "From our founder",
+    paragraph: `Ajay Khaitan, Founder of BrandStak and a serial investor in consumer and retail brands and “data-tech”, said, “By providing decisioning insights into the key assets of a retail business (Products, Customers, Distribution Channels and the Environment), BrandStak demonstrates the value of fluentcommerce’s OMS, constantly identifying new opportunities to exploit its power within a client’s business ecosystem.”`,
+    paragraph2: `James Waterhouse, CTO at BrandStak, added: “our Meta-Event real-time analytics platform will provide triggers to commercetools, that will optimise multi-mode commerce routings and journeys to enhance customer satisfaction and conversions.”`,
+    linkTitle1: "London Loves Tech",
+    link1: "https://londonlovestech.com/new-partnerships-for-brandstak-io/",
+    linkTitle2: "London Business",
+    link2:
+      "https://www.londonbusinessnews.com/brandstak-announces-partnerships-with-commercetools-and-fluent-commerce/",
+    linkTitle3: "London Business",
+    link3:
+      "https://londonbusinessjournal.co.uk/2022/06/09/new-partnerships-for-brandstak-io/",
   },
   {
     title: "What our partners say",
-    paragraph: ` Commercetools Head of Partnerships EMEA said “BrandStak will allow us
-  to reduce the cost, risk and time to market of implementations,
-  providing deep insights into how we create value for our customers”.
-  James Waterhouse, CTO at Brandstak added “our Meta-Event real time
-  analytics platform will provides triggers to Commerctools, maximising
-  the deployment of multiple commerce routings and journeys”.
-  
-  Fluent Commerce Head of Sales EMEA said “by proving out the benefits
-  our products bring and clearly demonstrating the ROI, BrandStak will
-  make a significant contribution to both conversion and project
-  delivery. The simplified integration and speed to market that
-  BrandStak offers over a traditional implementation approach will allow
-  our clients to indent, prove and realise benefits much faster than
-  ever before”.`,
+    paragraph: `Commercetool’s Dirk Weckerlei, VP Global Partnerships at commercetools said, “BrandStak will allow us to reduce our cost, risk and time to market in respect of implementations, providing deep insights into how we create value for our customers.”`,
+    paragraph2: `Fluent Commerce, Jamie Cairns CSO said “Brandstak will make a significant contribution to both conversion and project delivery for our clients.
+    The simplified integration and speed to market that Brandstak offers, over a traditional implementation approach will allow clients to realise the benefits and ROI much faster than before.”`,
   },
 ];
 
@@ -93,7 +88,34 @@ const StatementInner = ({ item }) => {
   return (
     <div className={styles.statementBlock}>
       <h4>{item.title}</h4>
-      <p>{item.paragraph}</p>
+      <p>
+        {item.paragraph}
+        <br />
+        <br />
+        {item.paragraph2}
+        <br />
+        <br />
+        <span className="press-links">
+          {item.link1 && "Links from the press:"}
+          <span className="link-group">
+            {item.link1 && (
+              <a href={item.link1} target="_blank">
+                {item.linkTitle1}
+              </a>
+            )}
+            {item.link2 && (
+              <a href={item.link2} target="_blank">
+                {item.linkTitle2}
+              </a>
+            )}
+            {item.link3 && (
+              <a href={item.link3} target="_blank">
+                {item.linkTitle3}
+              </a>
+            )}
+          </span>
+        </span>
+      </p>
     </div>
   );
 };

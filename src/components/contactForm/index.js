@@ -1,7 +1,7 @@
-import * as React from 'react';
-import Container from '../container';
+import * as React from "react";
+import Container from "../container";
 
-import * as styles from './styles.module.scss';
+import * as styles from "./styles.module.scss";
 
 const ContactForm = () => {
   return (
@@ -46,13 +46,13 @@ const ContactForm = () => {
                 <input name="Location" type="text" placeholder="Location" />
               </label>
             </div>
-            <div className={[styles.formField, styles['full']].join(' ')}>
+            <div className={[styles.formField, styles["full"]].join(" ")}>
               <label>
                 <p>Message</p>
                 <textarea name="Message" placeholder="Message" />
               </label>
             </div>
-            <div className={[styles.formField, styles['full']].join(' ')}>
+            <div className={[styles.formField, styles["full"]].join(" ")}>
               <input type="submit" value="Submit" />
             </div>
           </form>
